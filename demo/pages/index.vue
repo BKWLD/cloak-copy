@@ -18,7 +18,6 @@ export default
 	# Get page content
 	asyncData: ({ app, params, $content }) ->
 		page = await $content('home').fetch()
-		console.log page
 		return { page }
 
 </script>
@@ -27,11 +26,12 @@ export default
 
 <style lang='stylus' scoped>
 
-h1, h2
-	margin-top 1.5em
+h2
+	margin-top 2em
 	margin-bottom 0.5em
 
 .cloak-copy-wysiwyg
+.cloak-copy-rich-text
 	border 1px dashed grey
 	padding 1em
 

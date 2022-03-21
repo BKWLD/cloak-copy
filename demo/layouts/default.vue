@@ -19,4 +19,7 @@ export default
 
 <style lang='stylus' scoped>
 
+.page
+	padding-v 2em
+
 </style>
