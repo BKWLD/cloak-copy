@@ -1,0 +1,12 @@
+{
+	"name": "@cloak/copy",
+	"version": "1.0.0",
+	"description": "Cloak components for rendering WYSIWYG text.",
+	"repository": "git@github.com:BKWLD/cloak-copy.git",
+	"author": "Bukwild <info@bukwild.com>",
+	"license": "MIT",
+	"dependencies": {
+		"vue-balance-text": "^1.2.3",
+		"vue-unorphan": "^1.2.3"
+	}
+}

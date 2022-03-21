@@ -1,22 +1,25 @@
-<!-- Spacer block -->
+<!-- Demo of basic copy block -->
 
 <template lang='pug'>
 
-section.spacer(:class='classes')
+nuxt-content(:document='page')
 
 </template>
 
 <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 <script lang='coffee'>
+import pageMixin from '@bkwld/cloak/mixins/page'
+
 export default
 
-	props: block: Object
+	mixins: [ pageMixin ]
 
-	computed:
-
-		# Root classes
-		classes: -> "height-#{@block.height}"
+	# Get page content
+	asyncData: ({ app, params, $content }) ->
+		page = await $content('home').fetch()
+		console.log page
+		return { page }
 
 </script>
 
@@ -24,14 +27,12 @@ export default
 
 <style lang='stylus' scoped>
 
-.spacer
-	&.height-s
-		fluid-space height, 's'
-	&.height-m
-		fluid-space height, 'm'
-	&.height-l
-		fluid-space height, 'l'
-	&.height-xl
-		fluid-space height, 'xl'
+h1, h2
+	margin-top 1.5em
+	margin-bottom 0.5em
+
+.cloak-copy-wysiwyg
+	border 1px dashed grey
+	padding 1em
 
 </style>

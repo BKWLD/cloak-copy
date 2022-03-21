@@ -976,10 +976,8 @@
   dependencies:
     coffeescript "^2.5.1"
 
-"@bkwld/light-or-dark@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@bkwld/light-or-dark/-/light-or-dark-1.0.1.tgz#23a365153a75d14cc6b2432a8cd338f5b489165d"
-  integrity sha512-iPE6K+Z14D+kaJaymJ8w9g9Lbhc+ylf0VWH61KwL1k5AwV0OEjtKQs9DFsnORV0sayfyiznp7DOKIkl8w/tG/w==
+"@cloak/copy@../":
+  version "0.0.0"
 
 "@contentful/rich-text-types@^14.1.2":
   version "14.1.2"
@@ -2688,11 +2686,6 @@ bail@^1.0.0:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/bail/-/bail-1.0.5.tgz#b6fa133404a392cbc1f8c4bf63f5953351e7a776"
   integrity sha512-xFbRxM1tahm08yHBP16MMjVUAvDaBMD38zsM9EMAUN61omwLmKlOpB/Zku5QkjZ8TZ4vn53pj+t518cH0S03RQ==
-
-balance-text@3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/balance-text/-/balance-text-3.2.1.tgz#dead6553944b6e4e5f616a33423a44e93558dfd9"
-  integrity sha512-2mZCyeL1PgRaY20mHx9ScC7waurtCTf1htGChfEmFImZRztc52fB/VIWN+8VAPMKWpCuAAzxzhthHFeKEmbDlw==
 
 balanced-match@^1.0.0:
   version "1.0.2"
@@ -10307,11 +10300,6 @@ universalify@^2.0.0:
   resolved "https://registry.yarnpkg.com/universalify/-/universalify-2.0.0.tgz#75a4984efedc4b08975c5aeb73f530d02df25717"
   integrity sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==
 
-unorphan@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/unorphan/-/unorphan-1.2.1.tgz#9c3317c1506c62c63466b8f4d6380023328da4ac"
-  integrity sha1-nDMXwVBsYsY0Zrj01jgAIzKNpKw=
-
 unpipe@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/unpipe/-/unpipe-1.0.0.tgz#b2bf4ee8514aae6165b4817829d21b2ef49904ec"
@@ -10522,22 +10510,10 @@ void-elements@^2.0.1:
   resolved "https://registry.yarnpkg.com/void-elements/-/void-elements-2.0.1.tgz#c066afb582bb1cb4128d60ea92392e94d5e9dbec"
   integrity sha1-wGavtYK7HLQSjWDqkjkulNXp2+w=
 
-vue-balance-text@^1.2.3:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/vue-balance-text/-/vue-balance-text-1.2.3.tgz#b5ce40b6d0bc57b866a133db4bbde6208b7a2609"
-  integrity sha512-o5IYdVcheyht3Ljh9DxxpPVG+4Y1U4I634DodLpmliM0VR57JU4O01X3Gvy/junkrylAhY9iatiajIIQo5SpKA==
-  dependencies:
-    balance-text "3.2.1"
-
 vue-client-only@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/vue-client-only/-/vue-client-only-2.1.0.tgz#1a67a47b8ecacfa86d75830173fffee3bf8a4ee3"
   integrity sha512-vKl1skEKn8EK9f8P2ZzhRnuaRHLHrlt1sbRmazlvsx6EiC3A8oWF8YCBrMJzoN+W3OnElwIGbVjsx6/xelY1AA==
-
-vue-detachable-header@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/vue-detachable-header/-/vue-detachable-header-0.2.0.tgz#b83d866c3eb48f574f006f2140be798820298eb1"
-  integrity sha512-kJ5LNYzI8BApKQIs1rLi4bPK4nJqbq1gQVuPH4SQIN1uRh3XllVawno+mf98dAU/S8RqhohREiZ193kyxogbKA==
 
 vue-hot-reload-api@^2.3.0:
   version "2.3.4"
@@ -10613,13 +10589,6 @@ vue-template-es2015-compiler@^1.9.0:
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==
-
-vue-unorphan@^1.2.3:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/vue-unorphan/-/vue-unorphan-1.2.3.tgz#0baea59ed479a3151719747a175c8afd8e294173"
-  integrity sha512-/9mtl/R6Ql1VjKV8ydDxOaXziuNbDa5+i5HoBe3XaAT6J2biaB7o+bukNRQBHIBK5uNsfOJUQAMYshtYQd97JA==
-  dependencies:
-    unorphan "^1.2.1"
 
 vue-visual@^2.0.0:
   version "2.6.0"
@@ -10708,7 +10677,7 @@ webpack-dev-middleware@^4.2.0:
     range-parser "^1.2.1"
     schema-utils "^3.0.0"
 
-"webpack-graphql-loader@github:gpoitch/graphql-loader#gp/refresh":
+webpack-graphql-loader@gpoitch/graphql-loader#gp/refresh:
   version "1.0.2"
   resolved "https://codeload.github.com/gpoitch/graphql-loader/tar.gz/42f0f990a6132ccd5e284d0e6cfeade12728dba2"
   dependencies:
