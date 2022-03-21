@@ -10,12 +10,14 @@ export default function() {
 			path: join(__dirname, './adapters'),
 			extensions: ['js', 'coffee'],
 			prefix: 'cloak-copy',
+			level: 2,
 		})
 		dirs.push({
-				path: join(__dirname, './components'),
-				extensions: ['vue', 'js', 'coffee'],
-				prefix: 'cloak-copy',
-			})
+			path: join(__dirname, './components'),
+			extensions: ['vue', 'js', 'coffee'],
+			prefix: 'cloak-copy',
+			level: 2,
+		})
 	})
 
 	// Add unorphan and balance-text directive suppport
