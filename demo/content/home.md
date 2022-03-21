@@ -1,4 +1,4 @@
-# @cloak/copy
+# [@cloak/copy](https://github.com/BKWLD/cloak-copy)
 
 ## Passing in an HTML string to wysiwyg component
 
