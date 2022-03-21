@@ -7,9 +7,13 @@ boilerplate = makeBoilerplate
 # Nuxt config
 module.exports = mergeConfig boilerplate,
 
-	# Load this package's nuxt config
+	# Load CMS module
 	modules: [
 		'@nuxt/content'
+	]
+
+	# Load package
+	buildModules: [
 		'@cloak/copy/nuxt'
 	]
 
