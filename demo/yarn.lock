@@ -977,7 +977,10 @@
     coffeescript "^2.5.1"
 
 "@cloak/copy@../":
-  version "0.0.0"
+  version "1.0.0"
+  dependencies:
+    vue-balance-text "^1.2.3"
+    vue-unorphan "^1.2.3"
 
 "@contentful/rich-text-types@^14.1.2":
   version "14.1.2"
@@ -2686,6 +2689,11 @@ bail@^1.0.0:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/bail/-/bail-1.0.5.tgz#b6fa133404a392cbc1f8c4bf63f5953351e7a776"
   integrity sha512-xFbRxM1tahm08yHBP16MMjVUAvDaBMD38zsM9EMAUN61omwLmKlOpB/Zku5QkjZ8TZ4vn53pj+t518cH0S03RQ==
+
+balance-text@3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/balance-text/-/balance-text-3.2.1.tgz#dead6553944b6e4e5f616a33423a44e93558dfd9"
+  integrity sha512-2mZCyeL1PgRaY20mHx9ScC7waurtCTf1htGChfEmFImZRztc52fB/VIWN+8VAPMKWpCuAAzxzhthHFeKEmbDlw==
 
 balanced-match@^1.0.0:
   version "1.0.2"
@@ -10300,6 +10308,11 @@ universalify@^2.0.0:
   resolved "https://registry.yarnpkg.com/universalify/-/universalify-2.0.0.tgz#75a4984efedc4b08975c5aeb73f530d02df25717"
   integrity sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==
 
+unorphan@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/unorphan/-/unorphan-1.2.1.tgz#9c3317c1506c62c63466b8f4d6380023328da4ac"
+  integrity sha1-nDMXwVBsYsY0Zrj01jgAIzKNpKw=
+
 unpipe@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/unpipe/-/unpipe-1.0.0.tgz#b2bf4ee8514aae6165b4817829d21b2ef49904ec"
@@ -10510,6 +10523,13 @@ void-elements@^2.0.1:
   resolved "https://registry.yarnpkg.com/void-elements/-/void-elements-2.0.1.tgz#c066afb582bb1cb4128d60ea92392e94d5e9dbec"
   integrity sha1-wGavtYK7HLQSjWDqkjkulNXp2+w=
 
+vue-balance-text@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/vue-balance-text/-/vue-balance-text-1.2.3.tgz#b5ce40b6d0bc57b866a133db4bbde6208b7a2609"
+  integrity sha512-o5IYdVcheyht3Ljh9DxxpPVG+4Y1U4I634DodLpmliM0VR57JU4O01X3Gvy/junkrylAhY9iatiajIIQo5SpKA==
+  dependencies:
+    balance-text "3.2.1"
+
 vue-client-only@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/vue-client-only/-/vue-client-only-2.1.0.tgz#1a67a47b8ecacfa86d75830173fffee3bf8a4ee3"
@@ -10589,6 +10609,13 @@ vue-template-es2015-compiler@^1.9.0:
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==
+
+vue-unorphan@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/vue-unorphan/-/vue-unorphan-1.2.3.tgz#0baea59ed479a3151719747a175c8afd8e294173"
+  integrity sha512-/9mtl/R6Ql1VjKV8ydDxOaXziuNbDa5+i5HoBe3XaAT6J2biaB7o+bukNRQBHIBK5uNsfOJUQAMYshtYQd97JA==
+  dependencies:
+    unorphan "^1.2.1"
 
 vue-visual@^2.0.0:
   version "2.6.0"
