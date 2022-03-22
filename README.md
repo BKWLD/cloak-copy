@@ -13,7 +13,7 @@ Cloak components for rendering WYSIWYG text.  [View demo](https://cloak-copy.net
 1. Install with `yarn add @cloak/copy`
 2. Add to `nuxt.config` with `buildModules: ['@cloak/copy/nuxt']`
 
-### Propject dependencies
+### Project dependencies
 
 - Expects that [vue-routing-anchor-parser](https://github.com/BKWLD/vue-routing-anchor-parser) is configured
 - `.wyswiwyg` styles (included in Cloak via [`bukwild-stylus-library/boilerplate`](https://github.com/BKWLD/stylus-library/blob/master/boilerplate.styl)).
