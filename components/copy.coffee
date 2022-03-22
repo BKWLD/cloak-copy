@@ -1,6 +1,5 @@
 # Delegate rendering of copy depending on what kind of data is passed in
 export default
-	name: 'Copy'
 	functional: true
 
 	# Pass the HTML in
@@ -13,8 +12,7 @@ export default
 	render: (create, { props, data }) ->
 		return unless props.body
 
-		# Decide which component to render.  I'm intentionally avoiding importing
-		# the rich-text component because it's heavy.
+		# Decide which component to render.
 		switch typeof props.body
 
 			# For redactor html
@@ -27,7 +25,8 @@ export default
 				}
 			}
 
-			# For contentful rich text
+			# For contentful rich text. I'm intentionally avoiding importing
+			# the rich-text component because it's heavy.
 			when 'object' then create 'cloak-copy-rich-text', {
 				...data
 				props: {

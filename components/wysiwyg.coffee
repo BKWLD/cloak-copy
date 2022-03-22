@@ -1,7 +1,7 @@
-# Render HTML content from craft
+# Render HTML content from craft.  This is not a functional component because
+# this prevented it from being rendered by the generic Copy component when
+# SSGed.
 export default
-	name: 'WYSIWYG'
-	functional: true
 
 	# Pass the HTML in
 	props:
@@ -13,23 +13,22 @@ export default
 		balanceText: Boolean
 
 	# Render a div with wsywiyg class and props
-	render: (create, { props, data }) ->
-		return unless props.html
+	render: (create) ->
+		return unless @html
 		create 'div', {
-			...data
 
 			# Automatically add directives
 			directives: [
 				{ name: 'parse-anchors' }
-				{ name: 'unorphan' } if props.unorphan
-				{ name: 'balance-text', modifiers: children: true } if props.balanceText
+				{ name: 'unorphan' } if @unorphan
+				{ name: 'balance-text', modifiers: children: true } if @balanceText
 			].filter (val) -> !!val
 
 			# Append the WYSIWYG class
-			staticClass: ['wysiwyg', data.staticClass].join(' ').trim()
+			class: ['wysiwyg']
 
 			# Render the HTML
-			domProps: innerHTML: wrapTables props.html
+			domProps: innerHTML: wrapTables @html
 		}
 
 # Add a wrapping div around HTML instances so they can be horizontally scrolled
