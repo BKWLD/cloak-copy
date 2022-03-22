@@ -2,7 +2,7 @@
    command = "yarn dev"
 
 [build]
-  command = 'CI= yarn generate'
+  command = 'CI= yarn generate --force-build'
   publish = 'dist'
 
 
