@@ -4,8 +4,8 @@ Cloak components for rendering WYSIWYG text.  [View demo](https://cloak-copy.net
 
 ```vue
 <cloak-copy body='
-	<h3>I am a header</h3>
-	<p>This text is <strong>important</strong></p>
+  <h3>I am a header</h3>
+  <p>This text is <strong>important</strong></p>
 '></cloak-copy>
 ```
 
