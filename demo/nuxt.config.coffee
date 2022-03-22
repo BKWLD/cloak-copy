@@ -25,3 +25,6 @@ module.exports = mergeConfig boilerplate,
 	vue: config:
 		productionTip: false
 		devtools: true
+
+	# Test setting runtime config
+	cloak: copy: blockMaxWidthClass: 'max-w-small'

@@ -1,5 +1,21 @@
 # [@cloak/copy](https://github.com/BKWLD/cloak-copy)
 
+## Passing in an HTML string to generic component
+
+<cloak-copy body='
+	<h3>I am a header</h3>
+	<p>This text is <strong>important</strong></p>
+'></cloak-copy>
+
+
+```vue
+<cloak-copy body='
+	<h3>I am a header</h3>
+	<p>This text is <strong>important</strong></p>
+'></cloak-copy>
+```
+
+
 ## Passing in an HTML string to wysiwyg component
 
 <cloak-copy-wysiwyg html='
@@ -33,9 +49,9 @@
 ```
 
 
-## Using Contentful rich-text component
+## Using Contentful rich-text component through generic component
 
-<cloak-copy-rich-text :doc='{
+<cloak-copy :body='{
 	"nodeType": "document",
 	"data": {},
 	"content": [
@@ -72,10 +88,10 @@
 			]
 		}
 	]
-}'></cloak-copy-rich-text>
+}'></cloak-copy>
 
 ```vue
-<cloak-copy-rich-text :doc='{
+<cloak-copy :body='{
 	"nodeType": "document",
 	"data": {},
 	"content": [
@@ -112,5 +128,5 @@
 			]
 		}
 	]
-}'></cloak-copy-rich-text>
+}'></cloak-copy>
 ```

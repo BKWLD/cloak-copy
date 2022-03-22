@@ -20,6 +20,17 @@ export default function() {
 		})
 	})
 
+	// Relay package options to runtime config
+	this.options.publicRuntimeConfig.cloak = {
+		...this.options.publicRuntimeConfig.cloak,
+		copy: {
+			blockMaxWidthClass: 'max-w-medium',
+			embededEntriesQuery: undefined,
+			embededEntriesRenderer: undefined,
+			...this.options.cloak?.copy,
+		}
+	}
+
 	// Add unorphan and balance-text directive suppport
 	this.addModule('vue-balance-text/nuxt/module')
 	this.addModule('vue-unorphan/nuxt/module')

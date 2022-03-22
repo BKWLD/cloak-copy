@@ -184,7 +184,7 @@ export default
 			].filter (val) -> !!val
 
 			# Append the WYSIWYG class
-			class: ['wysiwyg', 'cloak-copy-rich-text']
+			class: ['wysiwyg']
 
 		# Nest the rich text component
 		}, create RichTextRenderer,

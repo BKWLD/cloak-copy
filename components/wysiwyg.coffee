@@ -26,11 +26,7 @@ export default
 			].filter (val) -> !!val
 
 			# Append the WYSIWYG class
-			staticClass: [
-				'wysiwyg'
-				'cloak-copy-wysiwyg'
-				data.staticClass
-			].join(' ').trim()
+			staticClass: ['wysiwyg', data.staticClass].join(' ').trim()
 
 			# Render the HTML
 			domProps: innerHTML: wrapTables props.html

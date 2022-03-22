@@ -17,7 +17,7 @@ export default
 
 	# Get page content
 	asyncData: ({ app, params, $content }) ->
-		page = await $content('home').fetch()
+		page = await $content('demo').fetch()
 		return { page }
 
 </script>
@@ -30,8 +30,10 @@ h2
 	margin-top 2em
 	margin-bottom 0.5em
 
-.cloak-copy-wysiwyg
-.cloak-copy-rich-text
+>>> h3
+	font-weight bold
+
+>>> .wysiwyg
 	border 1px dashed grey
 	padding 1em
 
