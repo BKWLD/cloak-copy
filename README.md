@@ -3,9 +3,8 @@
 Cloak components for rendering WYSIWYG text.  [View demo](https://cloak-copy.netlify.app/).
 
 ```vue
-<cloak-copy body='
-  <h3>I am a header</h3>
-  <p>This text is <strong>important</strong></p>
+<cloak-copy balance-text body='
+  <p>This <a href="/">link</a> uses v-parse-anchors.</p>
 '></cloak-copy>
 ```
 
@@ -14,8 +13,9 @@ Cloak components for rendering WYSIWYG text.  [View demo](https://cloak-copy.net
 1. Install with `yarn add @cloak/copy`
 2. Add to `nuxt.config` with `buildModules: ['@cloak/copy/nuxt']`
 
-### Cloak app dependencies
+### Propject dependencies
 
+- Expects that [vue-routing-anchor-parser](https://github.com/BKWLD/vue-routing-anchor-parser) is configured
 - `.wyswiwyg` styles (included in Cloak via [`bukwild-stylus-library/boilerplate`](https://github.com/BKWLD/stylus-library/blob/master/boilerplate.styl)).
 - `.max-w*` styles (included in Cloak via `whitespace.styl`)
 

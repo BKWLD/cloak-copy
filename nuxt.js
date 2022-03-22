@@ -31,9 +31,10 @@ export default function() {
 		}
 	}
 
-	// Add unorphan and balance-text directive suppport
-	this.addModule('vue-balance-text/nuxt/module')
-	this.addModule('vue-unorphan/nuxt/module')
+	// Add module depdencies
+	this.requireModule('vue-routing-anchor-parser/nuxt/module')
+	this.requireModule('vue-balance-text/nuxt/module')
+	this.requireModule('vue-unorphan/nuxt/module')
 }
 
 // Required for published modules

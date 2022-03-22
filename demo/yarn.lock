@@ -980,6 +980,7 @@
   version "1.0.0"
   dependencies:
     vue-balance-text "^1.2.3"
+    vue-routing-anchor-parser "^1.13.1"
     vue-unorphan "^1.2.3"
 
 "@contentful/rich-text-types@^14.1.2":
@@ -10568,7 +10569,7 @@ vue-router@^3.5.1:
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.5.3.tgz#041048053e336829d05dafacf6a8fb669a2e7999"
   integrity sha512-FUlILrW3DGitS2h+Xaw8aRNvGTwtuaxrRkNSHWTizOfLUie7wuYwezeZ50iflRn8YPV5kxmU2LQuu3nM/b3Zsg==
 
-vue-routing-anchor-parser@^1.8.0:
+vue-routing-anchor-parser@^1.13.1, vue-routing-anchor-parser@^1.8.0:
   version "1.13.1"
   resolved "https://registry.yarnpkg.com/vue-routing-anchor-parser/-/vue-routing-anchor-parser-1.13.1.tgz#6baeb1eb3ab467fd95f942639946396b850b09a3"
   integrity sha512-RoqfpzkZVC2BtkW2707H43u5e49Skpi/2iLMfkXKyHAnSSTJg9od6ERJQORvfGKYrrxMX4NkX/8Aib+zpPhpTA==
