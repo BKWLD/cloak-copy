@@ -2,6 +2,13 @@
 
 Cloak components for rendering WYSIWYG text.  [View demo](https://cloak-copy.netlify.app/).
 
+```vue
+<cloak-copy body='
+	<h3>I am a header</h3>
+	<p>This text is <strong>important</strong></p>
+'></cloak-copy>
+```
+
 ## Install
 
 1. Install with `yarn add @cloak/copy`
@@ -59,20 +66,3 @@ Renders Contentful Rich Text JSON.
   - `unorphan` - See above
   - `embededEntriesQuery` - String (docs TODO)
   - `embededEntriesRenderer` - Function (docs TODO)
-
-## Adapters
-
-### `cloak-copy-craft-block`
-
-Renders a `cloak-copy-wyswiyg` component from Redactor html content.
-
-- props:
-  - `block` - Object, with expecting these keys:
-    - `body` - String, the html content to be rendered
-    - `balanceText` - See above
-    - `unorphan` - See above
-    - `maxWidthClass` - See above
-
-## Migrations
-
-TODO
