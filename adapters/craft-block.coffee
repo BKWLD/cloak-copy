@@ -1,5 +1,5 @@
 ###
-Render a wysiwyg component field using block data
+Take a Craft block and render a copy block
 ###
 export default
 	functional: true
