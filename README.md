@@ -10,7 +10,7 @@ Cloak components for rendering WYSIWYG text.  [View demo](https://cloak-copy.net
 ### Cloak app dependencies
 
 - `.wyswiwyg` styles (included in Cloak via [`bukwild-stylus-library/boilerplate`](https://github.com/BKWLD/stylus-library/blob/master/boilerplate.styl)).
-- `max-w*` styles (included in Cloak via `whitespace.styl`)
+- `.max-w*` styles (included in Cloak via `whitespace.styl`)
 
 ### Module Options
 
