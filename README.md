@@ -7,15 +7,17 @@ Cloak components for rendering WYSIWYG text.  [View demo](https://cloak-copy.net
 1. Install with `yarn add @cloak/copy`
 2. Add to `nuxt.config` with `buildModules: ['@cloak/copy/nuxt']`
 
-Also, this package expects that your Nuxt app has added `.wyswiwyg` styles (such as via [`bukwild-stylus-library/boilerplate`](https://github.com/BKWLD/stylus-library/blob/master/boilerplate.styl)).
+### Cloak app dependencies
 
-## Module Options
+- `.wyswiwyg` styles (included in Cloak via [`bukwild-stylus-library/boilerplate`](https://github.com/BKWLD/stylus-library/blob/master/boilerplate.styl)).
+- `max-w*` styles (included in Cloak via `whitespace.styl`)
 
-- `cloak`:
-  - `copy`:
-    - `maxWidthClass` - The max width class to use to `max-w-medium`
-    - `embededEntriesQuery`
-    - `embededEntriesRenderer`
+### Module Options
+
+- `cloak.copy:`
+  - `maxWidthClass` - The max width class to use to `max-w-medium`
+  - `embededEntriesQuery`
+  - `embededEntriesRenderer`
 
 ## Components
 
