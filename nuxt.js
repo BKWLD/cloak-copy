@@ -24,7 +24,7 @@ export default function() {
 	this.options.publicRuntimeConfig.cloak = {
 		...this.options.publicRuntimeConfig.cloak,
 		copy: {
-			blockMaxWidthClass: 'max-w-medium',
+			blockMaxWidthClass: 'max-w-small',
 			embededEntriesQuery: undefined,
 			embededEntriesRenderer: undefined,
 			...this.options.cloak?.copy,

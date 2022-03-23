@@ -27,4 +27,5 @@ module.exports = mergeConfig boilerplate,
 		devtools: true
 
 	# Test setting runtime config
-	cloak: copy: blockMaxWidthClass: 'max-w-small'
+	# cloak: copy:
+	# 	blockMaxWidthClass: 'max-w-medium'
