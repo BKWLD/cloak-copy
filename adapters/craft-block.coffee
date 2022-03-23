@@ -11,5 +11,4 @@ export default
 				content: block.content
 				balanceText: block.balanceText
 				unorphan: block.unorphan
-				maxWidthClass: block.maxWidth
 		}

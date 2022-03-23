@@ -3,5 +3,4 @@ fragment copyBlock on BlockCopy {
 	content { json }
 	balanceText
 	unorphan
-	maxWidth
 }

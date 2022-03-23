@@ -3,5 +3,4 @@ fragment copyBlock on blocks_copy_BlockType {
 	content: fullWysiwyg
 	balanceText
 	unorphan
-	maxWidth
 }
