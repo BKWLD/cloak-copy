@@ -15,7 +15,7 @@
 	},
 	"dependencies": {
 		"@bkwld/cloak": "^1.13.0",
-		"@cloak/copy": "../",
+		"@cloak-app/copy": "../",
 		"@nuxt/content": "1.14.0",
 		"nuxt": "^2.15.7"
 	}

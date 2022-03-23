@@ -1,4 +1,4 @@
-# [@cloak/copy](https://github.com/BKWLD/cloak-copy)
+# [@cloak-app/copy](https://github.com/BKWLD/cloak-copy)
 
 ## Passing in an HTML string to generic component
 

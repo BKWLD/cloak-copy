@@ -1,4 +1,4 @@
-# @cloak/copy
+# @cloak-app/copy
 
 Cloak components for rendering WYSIWYG text.  [View demo](https://cloak-copy.netlify.app/).
 
@@ -10,8 +10,8 @@ Cloak components for rendering WYSIWYG text.  [View demo](https://cloak-copy.net
 
 ## Install
 
-1. Install with `yarn add @cloak/copy`
-2. Add to `nuxt.config` with `buildModules: ['@cloak/copy/nuxt']`
+1. Install with `yarn add @cloak-app/copy`
+2. Add to `nuxt.config` with `buildModules: ['@cloak-app/copy/nuxt']`
 
 ### Project Dependencies
 

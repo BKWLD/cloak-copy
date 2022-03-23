@@ -2,7 +2,7 @@ import { join } from 'path'
 export default function() {
 
 	// Have Nuxt transpile resources
-	this.options.build.transpile.push('@cloak/copy')
+	this.options.build.transpile.push('@cloak-app/copy')
 
 	// Allow components to be auto-imported by Nuxt
 	this.nuxt.hook('components:dirs', dirs => {

@@ -1,7 +1,7 @@
 # Use Cloak to make boilerplate
 { mergeConfig, makeBoilerplate, isDev, isGenerating } = require '@bkwld/cloak'
 boilerplate = makeBoilerplate
-	siteName: '@cloak/copy demo'
+	siteName: '@cloak-app/copy demo'
 	cms: '@nuxt/content'
 
 # Nuxt config
@@ -14,7 +14,7 @@ module.exports = mergeConfig boilerplate,
 
 	# Load package
 	buildModules: [
-		'@cloak/copy/nuxt'
+		'@cloak-app/copy/nuxt'
 	]
 
 	# @nuxt/content
