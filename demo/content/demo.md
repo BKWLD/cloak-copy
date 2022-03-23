@@ -2,14 +2,14 @@
 
 ## Passing in an HTML string to generic component
 
-<cloak-copy body='
+<cloak-copy content='
 	<h3>I am a header</h3>
 	<p>This text is <strong>important</strong></p>
 '></cloak-copy>
 
 
 ```vue
-<cloak-copy body='
+<cloak-copy content='
 	<h3>I am a header</h3>
 	<p>This text is <strong>important</strong></p>
 '></cloak-copy>
@@ -18,14 +18,14 @@
 
 ## Passing in an HTML string to wysiwyg component
 
-<cloak-copy-wysiwyg html='
+<cloak-copy-wysiwyg content='
 	<h3>I am a header</h3>
 	<p>This text is <strong>important</strong></p>
 '></cloak-copy-wysiwyg>
 
 
 ```vue
-<cloak-copy-wysiwyg html='
+<cloak-copy-wysiwyg content='
 	<h3>I am a header</h3>
 	<p>This text is <strong>important</strong></p>
 '></cloak-copy-wysiwyg>
@@ -35,14 +35,14 @@
 ## Using the Craft adapter
 
 <cloak-copy-craft-block :block='{
-	body: "<h3>I am a header</h3><p>This text is <strong>important</strong></p>",
+	content: "<h3>I am a header</h3><p>This text is <strong>important</strong></p>",
 	balanceText: false,
 	unorphan: false,
 }'></cloak-copy-craft-block>
 
 ```vue
 <cloak-copy-craft-block :block='{
-	body: "<h3>I am a header</h3><p>This text is <strong>important</strong></p>",
+	content: "<h3>I am a header</h3><p>This text is <strong>important</strong></p>",
 	balanceText: false,
 	unorphan: false,
 }'></cloak-copy-craft-block>
@@ -51,7 +51,7 @@
 
 ## Using Contentful rich-text component through generic component
 
-<cloak-copy :body='{
+<cloak-copy :content='{
 	"nodeType": "document",
 	"data": {},
 	"content": [
@@ -91,7 +91,7 @@
 }'></cloak-copy>
 
 ```vue
-<cloak-copy :body='{
+<cloak-copy :content='{
 	"nodeType": "document",
 	"data": {},
 	"content": [

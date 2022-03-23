@@ -8,7 +8,7 @@ export default
 		create 'cloak-copy-block', {
 			...data
 			props:
-				body: block.body
+				content: block.content
 				balanceText: block.balanceText
 				unorphan: block.unorphan
 				maxWidthClass: block.maxWidth

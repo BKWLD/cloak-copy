@@ -15,7 +15,7 @@ export default
 	props:
 
 		# Copy props
-		body: String | Object
+		content: String | Object
 		unorphan: Boolean
 		balanceText: Boolean
 

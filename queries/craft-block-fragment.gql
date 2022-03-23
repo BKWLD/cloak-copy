@@ -1,6 +1,6 @@
 # Render a WYSIWYG html field
 fragment copyBlock on blocks_copy_BlockType {
-	body: fullWysiwyg
+	content: fullWysiwyg
 	balanceText
 	unorphan
 	maxWidth

@@ -3,7 +3,7 @@
 Cloak components for rendering WYSIWYG text.  [View demo](https://cloak-copy.netlify.app/).
 
 ```vue
-<cloak-copy balance-text body='
+<cloak-copy balance-text content='
   <p>This <a href="/">link</a> uses v-parse-anchors.</p>
 '></cloak-copy>
 ```
@@ -30,10 +30,10 @@ Cloak components for rendering WYSIWYG text.  [View demo](https://cloak-copy.net
 
 ### `cloak-copy`
 
-This is a generic copy renderer that can be used by other Cloak components so they can stay ignorant of the CMS.  For instance, a FAQ component with a CMS-specific adapater.  In this case, the FAQ component can just pass along the `body` content it was provided to `cloak-copy` and never know whether it is rendering markup from Redactor or rich text from Contentful.
+This is a generic copy renderer that can be used by other Cloak components so they can stay ignorant of the CMS.  For instance, a FAQ component with a CMS-specific adapater.  In this case, the FAQ component can just pass along the `content` content it was provided to `cloak-copy` and never know whether it is rendering markup from Redactor or rich text from Contentful.
 
 - props:
-  - `body` - Either an HTML string or a Contentful rich text JSON document
+  - `content` - Either an HTML string or a Contentful rich text JSON document
   - `balanceText` - Boolean, enables [vue-balance-text](https://github.com/BKWLD/vue-balance-text)
   - `unorphan` - Boolean, enables [vue-unorphan](https://github.com/BKWLD/vue-unorphan)
 
@@ -42,17 +42,17 @@ This is a generic copy renderer that can be used by other Cloak components so th
 Renders a CMS non-specific `cloak-copy` instance within a `max-w` class.
 
 - props:
-  - `body` - String, the html content to be rendered
+  - `content` - String, the html content to be rendered
   - `balanceText` - See above
   - `unorphan` - See above
   - `maxWidthClass` - A `max-w-*` class to apply to the block
 
 ### `cloak-copy-wysiwyg`
 
-Takes `html` and wraps it with default wysiwyg styling.
+Takes `content` and wraps it with default wysiwyg styling.
 
 - props:
-  - `html` - String, the html content to be rendered
+  - `content` - String, the html content to be rendered
   - `balanceText` - See above
   - `unorphan` - See above
 
@@ -61,7 +61,7 @@ Takes `html` and wraps it with default wysiwyg styling.
 Renders Contentful Rich Text JSON.
 
 - props:
-  - `doc` - Object, the content to be rendered
+  - `content` - Object, the content to be rendered
   - `balanceText` - See above
   - `unorphan` - See above
   - `embededEntriesQuery` - String (docs TODO)

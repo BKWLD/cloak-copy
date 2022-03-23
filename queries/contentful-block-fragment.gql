@@ -1,6 +1,6 @@
 # Simple rich text renderer
 fragment copyBlock on BlockCopy {
-	body { json }
+	content { json }
 	balanceText
 	unorphan
 	maxWidth

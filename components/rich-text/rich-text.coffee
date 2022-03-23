@@ -12,7 +12,7 @@ export default
 
 	# Pass the JSON in
 	props:
-		doc: Object
+		content: Object
 
 		# Support passing in the query and renderer for embedded entries
 		embededEntriesQuery: String
@@ -66,7 +66,7 @@ export default
 	computed:
 
 		# Get the JSON from the passed in field data
-		docJson: -> @doc?.json || @doc
+		docJson: -> @content?.json || @content
 
 	methods:
 

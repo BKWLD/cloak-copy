@@ -5,36 +5,22 @@ export default
 
 	# Pass the HTML in
 	props:
-		body: String | Object
+		content: String | Object
 		unorphan: Boolean
 		balanceText: Boolean
 
 	# Render a div with wsywiyg class and props
 	render: (create, { props, data }) ->
-		return unless props.body
-		switch typeof props.body
+		return unless props.content
+		switch typeof props.content
 
 			# For redactor html. Using explicit component here because it's light
 			# and it allows me to leave it as a functional component. I discovered
 			# that functional components, when rendered like this, fail to render
 			# during SSG.
-			when 'string' then create Wysiwyg, {
-				...data
-				props: {
-					...props
-					html: props.body
-					body: undefined
-				}
-			}
+			when 'string' then create Wysiwyg, { ...data, props }
 
 			# For Contentful rich text. I'm intentionally avoiding importing
 			# the rich-text component because it's heavy. This is possible because
 			# it's not a functional component.
-			when 'object' then create 'cloak-copy-rich-text', {
-				...data
-				props: {
-					...props
-					doc: props.body
-					body: undefined
-				}
-			}
+			when 'object' then create 'cloak-copy-rich-text', { ...data, props }

@@ -5,7 +5,7 @@ export default
 
 	# Pass the HTML in
 	props:
-		html: String
+		content: String
 
 		# Enable these directives. They are expected to already be globally
 		# imported
@@ -14,7 +14,7 @@ export default
 
 	# Render a div with wsywiyg class and props
 	render: (create, { props, data }) ->
-		return unless props.html
+		return unless props.content
 		create 'div', {
 			...data
 
@@ -29,7 +29,7 @@ export default
 			staticClass: ['wysiwyg', data.staticClass].join(' ').trim()
 
 			# Render the HTML
-			domProps: innerHTML: wrapTables props.html
+			domProps: innerHTML: wrapTables props.content
 		}
 
 # Add a wrapping div around HTML instances so they can be horizontally scrolled
