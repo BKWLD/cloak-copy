@@ -22,7 +22,7 @@ Cloak components for rendering WYSIWYG text.  [View demo](https://cloak-copy.net
 ### Module Options
 
 - `cloak.copy:`
-  - `maxWidthClass` - The max width class to use to `max-w-medium`
+  - `maxWidthClass` - The default max-width class to use for the block.
   - `embededEntriesQuery`
   - `embededEntriesRenderer`
 
