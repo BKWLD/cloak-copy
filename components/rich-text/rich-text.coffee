@@ -3,7 +3,7 @@ import RichTextRenderer from 'contentful-rich-text-vue-renderer'
 import { INLINES, BLOCKS } from '@contentful/rich-text-types'
 
 # ContentfulVisual used to render image assets
-import ContentfulVisual from '@bkwld/cloak/components/contentful-visual'
+import ContentfulVisual from '@bkwld/cloak/components/contentful-visual.coffee'
 
 # Query to get embedded assets
 import getEmbeddedAsset from './embedded-asset.gql'

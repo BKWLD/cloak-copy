@@ -3,7 +3,7 @@
 <template lang='pug'>
 
 section.copy-block(:class='classes')
-	cloak-copy(v-bind='$props')
+	cloak-copy(v-bind='{ content, unorphan, balanceText }')
 
 </template>
 

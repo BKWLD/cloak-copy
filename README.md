@@ -1,6 +1,9 @@
 # @cloak-app/copy
 
-Cloak components for rendering WYSIWYG text.  [View demo](https://cloak-copy.netlify.app/).
+Cloak components for rendering WYSIWYG text.
+
+- [View demo](https://cloak-copy.netlify.app/)
+- [Edit CodeSandbox](https://githubbox.com/BKWLD/cloak-copy)
 
 ```vue
 <cloak-copy balance-text content='
@@ -66,3 +69,7 @@ Renders Contentful Rich Text JSON.
   - `unorphan` - See above
   - `embededEntriesQuery` - String (docs TODO)
   - `embededEntriesRenderer` - Function (docs TODO)
+
+## Contributing
+
+Run `yarn dev` to open a Nuxt dev build of [the demo directory](./demo).
