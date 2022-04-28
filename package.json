@@ -5,6 +5,7 @@
 	"repository": "git@github.com:BKWLD/cloak-copy.git",
 	"author": "Bukwild <info@bukwild.com>",
 	"license": "MIT",
+	"main": "nuxt.js",
 	"scripts": {
 		"dev": "nuxt dev demo",
 		"build": "nuxt build demo",
@@ -18,8 +19,8 @@
 		"vue-unorphan": "^1.2.3"
 	},
 	"devDependencies": {
-		"@cloak-app/boilerplate": "^1.0.2",
-		"@cloak-app/demo-theme": "^1.0.3",
+		"@cloak-app/boilerplate": "^1.0.8",
+		"@cloak-app/demo-theme": "^1.0.5",
 		"@nuxt/content": "^1.14.0",
 		"nuxt": "^2.15.7"
 	}

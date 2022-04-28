@@ -14,7 +14,7 @@ Cloak components for rendering WYSIWYG text.
 ## Install
 
 1. Install with `yarn add @cloak-app/copy`
-2. Add to `nuxt.config` with `buildModules: ['@cloak-app/copy/nuxt']`
+2. Add to `nuxt.config` with `buildModules: ['@cloak-app/copy']`
 
 ### Project Dependencies
 
