@@ -24,14 +24,15 @@ Cloak components for rendering WYSIWYG text.
 
 ### Module Options
 
-- `cloak.copy:`
-  - `maxWidthClass` - The default max-width class to use for the block.
-  - `embededEntriesQuery`
-  - `embededEntriesRenderer`
+Set these properties within `cloak: { copy: { ... } }` in the nuxt.config.js:
+
+- `maxWidthClass` - The default max-width class to use for the block.
+- `embededEntriesQuery` - (docs TODO)
+- `embededEntriesRenderer` - (docs TODO)
 
 ## Components
 
-### `cloak-copy`
+`<cloak-copy/>`
 
 This is a generic copy renderer that can be used by other Cloak components so they can stay ignorant of the CMS.  For instance, a FAQ component with a CMS-specific adapater.  In this case, the FAQ component can just pass along the `content` content it was provided to `cloak-copy` and never know whether it is rendering markup from Redactor or rich text from Contentful.
 
@@ -40,7 +41,7 @@ This is a generic copy renderer that can be used by other Cloak components so th
   - `balanceText` - Boolean, enables [vue-balance-text](https://github.com/BKWLD/vue-balance-text)
   - `unorphan` - Boolean, enables [vue-unorphan](https://github.com/BKWLD/vue-unorphan)
 
-### `cloak-copy-block`
+`<cloak-copy-block/>`
 
 Renders a CMS non-specific `cloak-copy` instance within a `max-w` class.
 
@@ -50,7 +51,7 @@ Renders a CMS non-specific `cloak-copy` instance within a `max-w` class.
   - `unorphan` - See above
   - `maxWidthClass` - A `max-w-*` class to apply to the block
 
-### `cloak-copy-wysiwyg`
+`<cloak-copy-wysiwyg/>`
 
 Takes `content` and wraps it with default wysiwyg styling.
 
@@ -59,7 +60,7 @@ Takes `content` and wraps it with default wysiwyg styling.
   - `balanceText` - See above
   - `unorphan` - See above
 
-### `cloak-copy-rich-text`
+`<cloak-copy-rich-text/>`
 
 Renders Contentful Rich Text JSON.
 
