@@ -1,6 +1,6 @@
 {
 	"name": "@cloak-app/copy",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Cloak components for rendering WYSIWYG text.",
 	"repository": "git@github.com:BKWLD/cloak-copy.git",
 	"author": "Bukwild <info@bukwild.com>",
