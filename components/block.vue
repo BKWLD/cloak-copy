@@ -19,15 +19,15 @@ export default
 		unorphan: Boolean
 		balanceText: Boolean
 
-		# The max-width class
-		maxWidthClass:
+		# Block props
+		maxWidth:
 			type: String
-			default: -> @$config.cloak?.copy?.blockMaxWidthClass || ''
+			default: -> @$config.cloak?.copy?.blockMaxWidth || ''
 
 	computed:
 
 		# Root classes
-		classes: -> @maxWidthClass
+		classes: -> @maxWidth # Expect to match a CSS class
 
 </script>
 

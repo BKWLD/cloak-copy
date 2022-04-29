@@ -7,8 +7,5 @@ export default
 	render: (create, { props: { block }, data }) ->
 		create 'cloak-copy-block', {
 			...data
-			props:
-				content: block.content
-				balanceText: block.balanceText
-				unorphan: block.unorphan
+			props: block
 		}

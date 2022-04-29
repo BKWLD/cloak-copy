@@ -26,7 +26,7 @@ Cloak components for rendering WYSIWYG text.
 
 Set these properties within `cloak: { copy: { ... } }` in the nuxt.config.js:
 
-- `maxWidthClass` - The default max-width class to use for the block.
+- `blockMaxWidth` - A string that should match a global CSS class that adds horizontal `padding` and a `max-width` to the block component.  Defaults to `max-w`.
 - `embededEntriesQuery` - (docs TODO)
 - `embededEntriesRenderer` - (docs TODO)
 
