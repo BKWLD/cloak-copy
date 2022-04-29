@@ -49,7 +49,7 @@ Renders a CMS non-specific `cloak-copy` instance within a `max-w` class.
   - `content` - String, the html content to be rendered
   - `balanceText` - See above
   - `unorphan` - See above
-  - `maxWidthClass` - A `max-w-*` class to apply to the block
+  - `maxWidth` - A `max-w-*` class to apply to the block
 
 `<cloak-copy-wysiwyg/>`
 
