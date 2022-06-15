@@ -38,6 +38,7 @@
 	content: "<h3>I am a header</h3><p>This text is <strong>important</strong></p>",
 	balanceText: false,
 	unorphan: false,
+	textAlign: "center",
 }'></cloak-copy-craft-block>
 
 ```vue
@@ -45,6 +46,7 @@
 	content: "<h3>I am a header</h3><p>This text is <strong>important</strong></p>",
 	balanceText: false,
 	unorphan: false,
+	textAlign: "center",
 }'></cloak-copy-craft-block>
 ```
 

@@ -18,6 +18,7 @@ export default
 		content: String | Object
 		unorphan: Boolean
 		balanceText: Boolean
+		textAlign: String
 
 		# Block props
 		maxWidth:
@@ -27,10 +28,23 @@ export default
 	computed:
 
 		# Root classes
-		classes: -> @maxWidth # Expect to match a CSS class
+		classes: -> [
+			@maxWidth # Expect to match a CSS class
+			"text-align-#{@textAlign}" if @textAlign
+		].filter (val) -> !!val
 
 </script>
 
 <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-<style lang='stylus' scoped></style>
+<style lang='stylus' scoped>
+
+.text-align
+	&-left
+		text-align left
+	&-center
+		text-align center
+	&-right
+		text-align right
+
+</style>
